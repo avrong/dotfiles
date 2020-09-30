@@ -1,0 +1,5 @@
+ctrlc_exit = false
+prompt = "echo $(starship prompt)"
+skip_welcome_message = true
+startup = ["alias home [] { cd ~/Data }"]
+use_starship = true

@@ -1,0 +1,10 @@
+be5invis.vscode-icontheme-nomo-dark
+bungcip.better-toml
+eamodio.gitlens
+karunamurti.tera
+matklad.pale-fire
+matklad.rust-analyzer
+ms-python.python
+ms-vscode-remote.remote-wsl
+serayuzgur.crates
+vadimcn.vscode-lldb

@@ -1,0 +1,27 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "files.trimFinalNewlines": true,
+    "workbench.iconTheme": "vs-nomo-dark",
+    "terminal.explorerKind": "external",
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.compactFolders": false,
+    "window.titleBarStyle": "native",
+    "files.exclude": {
+        "**/.idea": true,
+        "**/target": true
+    },
+    "editor.fontSize": 13,
+    "window.enableMenuBarMnemonics": false,
+    "window.menuBarVisibility": "hidden",
+    "workbench.colorTheme": "Pale Fire",
+    "workbench.sideBar.location": "left",
+    "workbench.list.horizontalScrolling": true,
+    "gitlens.defaultGravatarsStyle": "identicon",
+    "editor.minimap.enabled": false,
+    "gitlens.hovers.avatars": false,
+    "python.showStartPage": false
+}
