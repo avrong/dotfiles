@@ -23,7 +23,7 @@
                 "name": "PowerShell Core",
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a412336}",
                 "commandline": "%USERPROFILE%/scoop/apps/pwsh/current/pwsh.exe",
-                "icon": "%USERPROFILE%\\scoop\\apps\\pwsh\\current\\assets\\StoreLogo.png",
+                "icon": "%USERPROFILE%/scoop/apps/pwsh/current/assets/StoreLogo.png",
             },
             {
                 "name": "Command Line",
