@@ -1,12 +1,9 @@
 {
-	"font_face": "Fira Code",
-    "font_size": 10,
-	"font_options":
-	[
-		"no_italic",
-		"no_bold"
-	],
-    "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
-	"theme": "Adaptive.sublime-theme",
-	"translate_tabs_to_spaces": true
+	"font_face": "Fira Code Retina",
+    "font_size": 13,
+    "color_scheme": "Packages/Alabaster Color Scheme/Alabaster BG.sublime-color-scheme",
+    "theme": "auto",
+	"translate_tabs_to_spaces": true,
+    "rulers": [80]
 }
+

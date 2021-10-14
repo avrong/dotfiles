@@ -10,35 +10,11 @@
             "startingDirectory": "%USERPROFILE%/Data/",
             "colorScheme": "Dracula",
             "fontFace": "FiraCode NF",
-            "fontSize": 11,
+            "fontSize": 11
         },
 
-        "list": [
-            {
-                "name": "nu shell",
-                "guid": "{9e68e384-4057-44b3-921c-82816244ad99}",
-                "commandline": "%USERPROFILE%/scoop/apps/nu/current/nu.exe"
-            },
-            {
-                "name": "PowerShell Core",
-                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a412336}",
-                "commandline": "%USERPROFILE%/scoop/apps/pwsh/current/pwsh.exe",
-                "icon": "%USERPROFILE%/scoop/apps/pwsh/current/assets/StoreLogo.png",
-            },
-            {
-                "name": "Command Line",
-                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                "commandline": "C://Windows/System32/cmd.exe",
-            },
-            {
-                "name": "MSYS64",
-                "guid": "{3d5ad423-33b7-57da-b960-5309b09da518}",
-                "commandline": "cmd.exe /c set MSYSTEM=MINGW64 && c:/msys64/usr/bin/bash --login -i"
-            }
-        ]
+        "list": []
     },
-
-    "disabledProfileSources": ["Windows.Terminal.Wsl", "Windows.Terminal.Azure", "Windows.Terminal.PowershellCore"],
 
     "schemes": [{
         "name": "Dracula",
@@ -64,6 +40,6 @@
 
     "largePasteWarning": false,
     "multiLinePasteWarning": false,
-    
+
     "keybindings": []
 }
