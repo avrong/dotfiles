@@ -3,7 +3,8 @@ call plug#begin(stdpath('data') . '/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'tpope/vim-surround'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -11,7 +12,7 @@ call plug#end()
 
 set number relativenumber
 
-" remap basic navigation (j - down, k - up, l - left, ; - right)
+" remap basic navigation to match home row (j - down, k - up, l - left, ; - right)
 noremap l h
 noremap ; l
 noremap h ;
@@ -25,6 +26,13 @@ set shiftwidth=4
 " on pressing tab, insert 4 spaces
 set expandtab
 
-" highlight trailing whitespaces
-" highlight ExtraWhitespace ctermbg=red guibg=red
-" match ExtraWhitespace /\s\+$/
+" disable recording key
+map q <Nop>
+
+" highlight matching bracket less brighter
+highlight MatchParen cterm=bold ctermbg=none ctermfg=white
+
+" jump to specific file
+nnoremap <C-P> :Files<cr>
+" search whole project
+nnoremap \ :Rg<space>

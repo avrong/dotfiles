@@ -1,0 +1,7 @@
+source ~/.config/nvim/init.vim
+
+" uses line join from idea
+set ideajoin
+
+" disables IdeaVIM in dialogs text areas
+set ideavimsupport=
