@@ -8,10 +8,10 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'preservim/nerdtree'
-Plug 'yegappan/mru'
+Plug 'yegappan/mru' " most recently used (do I need it? fzf seems to be covering this)
 Plug 'airblade/vim-gitgutter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'cocopon/iceberg.vim'
+Plug 'cocopon/iceberg.vim' " theme
 
 call plug#end()
 
@@ -39,7 +39,7 @@ set shiftwidth=4
 " on pressing tab, insert 4 spaces
 set expandtab
 
-" disable recording key
+" disable macro recording key
 map q <Nop>
 
 " enable mouse support
@@ -48,13 +48,22 @@ set mouse=a
 " highlight matching bracket less brighter
 highlight MatchParen cterm=bold ctermbg=none ctermfg=white
 
+"" FZF
+
 " jump to specific file
 nnoremap <C-P> :Files<cr>
 " search whole project
 nnoremap \ :Rg<space>
+" open buffers list & search
+nnoremap <C-K> :Buffers<cr>
+" open history
+nnoremap <C-H> :History<cr>
 
 " search for selection with //
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
 " open NERDTree with <F5>
 map <F5> :NERDTreeToggle<CR>
+
+" remove hanging spaces in the whole file
+map <e-S> :StripWhitespace<cr>
