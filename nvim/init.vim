@@ -66,4 +66,4 @@ vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 map <F5> :NERDTreeToggle<CR>
 
 " remove hanging spaces in the whole file
-map <e-S> :StripWhitespace<cr>
+map <C-S> :StripWhitespace<cr>
