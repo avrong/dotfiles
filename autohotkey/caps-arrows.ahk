@@ -8,3 +8,6 @@ CapsLock & h::Send, {blind}{Backspace}
 
 CapsLock & u::Send, {blind}{Home}
 CapsLock & o::Send, {blind}{End}
+
+CapsLock & p::Send, {blind}{PgUp}
+CapsLock & `;::Send, {blind}{PgDn}
