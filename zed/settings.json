@@ -7,7 +7,14 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "theme": "One Light",
+  "auto_update": false,
+
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+
+  "theme": "macOS Classic Light",
   "buffer_font_family": "Fira Code",
   "buffer_font_size": 13,
 
@@ -24,9 +31,15 @@
     "button": false
   },
   "assistant": {
+    "version": "2",
     "button": false
   },
   "features": {
     "copilot": false
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "rust-analyzer.assist.importMergeBehaviour": "none"
+    }
   }
 }

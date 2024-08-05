@@ -1,0 +1,21 @@
+[
+  {
+  "context": "Workspace",
+    "bindings": {
+      "cmd-r": null,
+      "cmd-?": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-enter": null
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "cmd->": null
+    }
+  },
+]
