@@ -35,7 +35,8 @@
     "button": false
   },
   "features": {
-    "copilot": false
+    "copilot": false,
+    "inline_completion_provider": "none"
   },
   "lsp": {
     "rust-analyzer": {
