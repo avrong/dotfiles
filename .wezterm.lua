@@ -22,10 +22,34 @@ config.window_padding = {
 -- Execution
 config.default_prog = { 'nu.exe' }
 
+-- Functions
 config.scrollback_lines = 16000
 
--- Rename tab with Ctrl+Shift+E
+-- Launch Menu
+config.launch_menu = {
+  {
+    label = 'NuShell',
+    args = { 'nu.exe' }
+  },
+  {
+    label = 'Ubuntu 22.04',
+    args = { 'ubuntu2204.exe' }
+  },
+  {
+    label = 'PowerShell',
+    args = { 'powershell.exe', '-NoLogo' }
+  },
+  {
+    label = 'CMD',
+    args = { 'cmd.exe' }
+  }
+}
+
+-- Keymap
 config.keys = {
+  -- Show launcher on Alt+L
+  { key = 'l', mods = 'ALT', action = wezterm.action.ShowLauncher },
+  -- Rename tab with Ctrl+Shift+E
   {
     key = 'E',
     mods = 'CTRL|SHIFT',
