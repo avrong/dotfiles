@@ -13,8 +13,13 @@
     "diagnostics": false,
     "metrics": false
   },
+  
+  "theme": {
+    "mode": "system",
+    "light": "One Dark",
+    "dark": "One Dark"
+  },
 
-  "theme": "macOS Classic Light",
   "buffer_font_family": "Fira Code",
   "buffer_font_size": 13,
 
@@ -38,6 +43,7 @@
     "copilot": false,
     "inline_completion_provider": "none"
   },
+  
   "lsp": {
     "rust-analyzer": {
       "rust-analyzer.assist.importMergeBehaviour": "none"

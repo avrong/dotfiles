@@ -40,17 +40,17 @@ set number relativenumber
 " let g:airline_powerline_fonts = 1
 
 " remap basic navigation to match home row (j - down, k - up, l - left, ; - right)
-noremap l h
-noremap ; l
-noremap h ;
+" noremap l h
+" noremap ; l
+" noremap h ;
 
 " remap windows navigation
-noremap <C-w>l <C-w>h
-noremap <C-w>; <C-w>l
-noremap <C-w>h <C-w>;
+" noremap <C-w>l <C-w>h
+" noremap <C-w>; <C-w>l
+" noremap <C-w>h <C-w>;
 
 " remap ; (repeat move forward in line)
-nnoremap h ;
+" nnoremap h ;
 
 " use return to hide search highlight
 nnoremap <CR> :noh<CR>
