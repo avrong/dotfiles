@@ -27,8 +27,8 @@
   "format_on_save": "off",
   "ensure_final_newline_on_save": false,
 
-  // Vim mode
-  "vim_mode": true,
+  // Helix mode
+  "helix_mode": true,
   "relative_line_numbers": true,
 
   // Remove useless buttons
@@ -43,6 +43,7 @@
     "copilot": false,
     "inline_completion_provider": "none"
   },
+  "disable_ai": true,
   
   "lsp": {
     "rust-analyzer": {
