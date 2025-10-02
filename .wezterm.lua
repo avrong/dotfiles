@@ -18,6 +18,7 @@ config.font = wezterm.font 'Cascadia Mono'
 config.font_size = 10.0
 config.enable_scroll_bar = true
 config.min_scroll_bar_height = "1cell"
+config.show_new_tab_button_in_tab_bar = false
 config.show_close_tab_button_in_tabs = false
 
 config.window_padding = {
@@ -28,7 +29,8 @@ config.window_padding = {
 }
 
 -- Execution
-config.default_prog = { 'nu.exe' }
+config.default_prog = { 'powershell.exe', '-NoLogo' }
+// config.default_prog = { 'nu.exe' }
 
 -- Functions
 config.scrollback_lines = 16000
@@ -36,20 +38,24 @@ config.scrollback_lines = 16000
 -- Launch Menu
 config.launch_menu = {
   {
-    label = 'Nushell',
-    args = { 'nu.exe' }
-  },
-  {
-    label = 'Ubuntu 22.04',
-    args = { 'ubuntu2204.exe' }
-  },
-  {
     label = 'PowerShell',
+    domain = 'DefaultDomain',
     args = { 'powershell.exe', '-NoLogo' }
   },
   {
+    label = 'Ubuntu 22.04',
+    domain = 'DefaultDomain',
+    args = { 'ubuntu2204.exe' }
+  },
+  {
     label = 'CMD',
+    domain = 'DefaultDomain',
     args = { 'cmd.exe' }
+  },
+  {
+    label = 'Nushell',
+    domain = 'DefaultDomain',
+    args = { 'nu.exe' }
   }
 }
 
@@ -72,6 +78,36 @@ config.keys = {
         end
       end),
     },
+  },
+  -- Override new tab creation to always use default domain
+  {
+    key = 't',
+    mods = 'CTRL|SHIFT',
+    action = act.SpawnTab 'DefaultDomain'
+  }
+}
+
+-- Mouse bindings
+config.mouse_bindings = {
+  -- Change the default click behavior so that it only selects text and doesn't open hyperlinks
+  {
+    event={Up={streak=1, button="Left"}},
+    mods="NONE",
+    action=act.CompleteSelection("PrimarySelection"),
+  },
+
+  -- Make Ctrl-Click open hyperlinks
+  {
+    event={Up={streak=1, button="Left"}},
+    mods="CTRL",
+    action=act.OpenLinkAtMouseCursor,
+  },
+
+  -- Disable the 'Down' event of Ctrl-Click to avoid weird program behaviors
+  {
+    event = { Down = { streak = 1, button = 'Left' } },
+    mods = 'CTRL',
+    action = act.Nop,
   },
 }
 
