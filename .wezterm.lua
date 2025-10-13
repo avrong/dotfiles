@@ -30,7 +30,7 @@ config.window_padding = {
 
 -- Execution
 config.default_prog = { 'powershell.exe', '-NoLogo' }
-// config.default_prog = { 'nu.exe' }
+-- config.default_prog = { 'nu.exe' }
 
 -- Functions
 config.scrollback_lines = 16000
